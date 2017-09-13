@@ -1,0 +1,55 @@
+Course Project: Shiny Application and Reproducible Pitch
+========================================================
+author: M A Nadeem
+date: September12, 2017
+autosize: true
+
+Overview
+========================================================
+
+This was built for the course: *Developing Data Products* as part of the Coursera Data Science Specialization.
+
+The shiny app developed for this task is avalilable at: https://ndmvu.shinyapps.io/testing_shiny_app_for_assessment_of_cs_students/
+
+The source codes of ui.R and server.R and also Rpresentation are available on the GitHub repo: https://github.com/ndmvu/dev-data-prod.git
+
+Testing Utility for Assessment of Computer Science Students
+========================================================
+The average score for the three tests is computed as following.
+
+Average Score = (a + b + c)/3
+
+Where;
+
+- a = Algorithms Score 
+- b = Operating Systems score 
+- c = Computer Architecture score 
+
+Interpretations of Test Scores
+========================================================
+
+**Example:**
+If a candidate scores **80** in Algorithms, **70** in Operating Systems, and **90** Computer Architecture.
+
+Then, Average score is **80**
+
+- Average <60     : Failed
+- Average [60-75] : Average
+- Average [75-89] : Good
+- Average >= 90   : Excellent
+
+Shiny App: Testing Utility for Assessment of Computer Science Students
+========================================================
+
+## Sidebar panel
+
+- numericInput: Value of Algorithms score
+- numericInput: Value of Operating Systems score
+- numericInput: Value of Computer Architecture score
+
+## Main panel
+
+- Short description of computing Average Score 
+- Server side computes Average
+- Displaying the computed Average Score
+- Interpretation of Average Score
